@@ -4,7 +4,7 @@ spring:
   data:
     mongodb:
       uri: ${mongodb.logger.uri:${mongodb.uri:mongodb://localhost:27017}}
-      database: requeks
+      database: duman
 
 server:
   port: 9090
@@ -15,7 +15,7 @@ server:
 
 logging:
   file:
-    name: log/requeks.log
+    name: log/duman.log
 
 management:
   endpoint:
