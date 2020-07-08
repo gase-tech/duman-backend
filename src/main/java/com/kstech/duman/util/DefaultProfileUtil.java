@@ -1,4 +1,4 @@
-package com.kstech.requeks.util;
+package com.kstech.duman.util;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.core.env.Environment;
@@ -6,8 +6,8 @@ import org.springframework.core.env.Environment;
 import java.util.HashMap;
 import java.util.Map;
 
-import static com.kstech.requeks.constants.ApplicationConstants.SPRING_PROFILE_DEFAULT;
-import static com.kstech.requeks.constants.ApplicationConstants.SPRING_PROFILE_DEVELOPMENT;
+import static com.kstech.duman.constants.ApplicationConstants.SPRING_PROFILE_DEFAULT;
+import static com.kstech.duman.constants.ApplicationConstants.SPRING_PROFILE_DEVELOPMENT;
 
 public final class DefaultProfileUtil {
 

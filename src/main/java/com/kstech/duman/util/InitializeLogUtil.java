@@ -1,4 +1,4 @@
-package com.kstech.requeks.util;
+package com.kstech.duman.util;
 
 import io.micrometer.core.instrument.util.StringUtils;
 import lombok.extern.slf4j.Slf4j;

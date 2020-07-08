@@ -1,4 +1,4 @@
-package com.kstech.requeks.config;
+package com.kstech.duman.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;

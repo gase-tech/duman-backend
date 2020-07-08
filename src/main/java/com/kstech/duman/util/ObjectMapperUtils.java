@@ -1,4 +1,4 @@
-package com.kstech.requeks.util;
+package com.kstech.duman.util;
 
 import org.modelmapper.ModelMapper;
 import org.modelmapper.convention.MatchingStrategies;

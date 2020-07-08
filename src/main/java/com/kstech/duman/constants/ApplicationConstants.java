@@ -1,4 +1,4 @@
-package com.kstech.requeks.constants;
+package com.kstech.duman.constants;
 
 import java.util.Arrays;
 import java.util.List;

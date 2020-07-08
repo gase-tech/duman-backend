@@ -1,7 +1,7 @@
-package com.kstech.requeks;
+package com.kstech.duman;
 
-import com.kstech.requeks.util.DefaultProfileUtil;
-import com.kstech.requeks.util.InitializeLogUtil;
+import com.kstech.duman.util.DefaultProfileUtil;
+import com.kstech.duman.util.InitializeLogUtil;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.core.env.Environment;
@@ -13,10 +13,10 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @EnableSwagger2
 @EnableScheduling
 @EnableAsync
-public class RequeksApplication {
+public class DumanApplication {
 
 	public static void main(String[] args) {
-		SpringApplication app = new SpringApplication(RequeksApplication.class);
+		SpringApplication app = new SpringApplication(DumanApplication.class);
 		DefaultProfileUtil.addDefaultProfile(app);
 		Environment env = app.run(args).getEnvironment();
 		InitializeLogUtil.logApplicationStartup(env);
