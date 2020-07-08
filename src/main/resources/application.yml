@@ -1,0 +1,30 @@
+spring:
+  application:
+    name: config-server
+  data:
+    mongodb:
+      uri: ${mongodb.logger.uri:${mongodb.uri:mongodb://localhost:27017}}
+      database: requeks
+
+server:
+  port: 9090
+  servlet:
+    session:
+      cookie:
+        http-only: true
+
+logging:
+  file:
+    name: log/requeks.log
+
+management:
+  endpoint:
+    routes:
+      enabled: true
+    health:
+      enabled: true
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: "*"

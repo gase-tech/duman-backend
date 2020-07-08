@@ -1,0 +1,16 @@
+${AnsiColor.BLUE}                           _
+${AnsiColor.BLUE}                          | |
+${AnsiColor.BLUE} _ __ ___  __ _ _   _  ___| | _____
+${AnsiColor.BLUE}| '__/ _ \/ _` | | | |/ _ \ |/ / __|
+${AnsiColor.BLUE}| | |  __/ (_| | |_| |  __/   <\__ \
+${AnsiColor.BLUE}|_|  \___|\__, |\__,_|\___|_|\_\___/
+${AnsiColor.BLUE}             | |
+${AnsiColor.BLUE}             |_|
+
+${AnsiColor.RED}█
+${AnsiColor.RED}█
+${AnsiColor.RED}█  ${AnsiColor.BLACK}Application Name : ${spring.application.name}
+${AnsiColor.RED}█  ${AnsiColor.CYAN}Spring Boot Version : ${spring-boot.formatted-version}
+${AnsiColor.RED}█  ${AnsiColor.BRIGHT_BLACK}Java Version : ${java.version}
+${AnsiColor.RED}█
+${AnsiColor.RED}█
