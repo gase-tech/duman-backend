@@ -5,6 +5,8 @@ spring:
     mongodb:
       uri: ${mongodb.logger.uri:${mongodb.uri:mongodb://localhost:27017}}
       database: duman
+  autoconfigure:
+    exclude: org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
 
 server:
   port: 9090
