@@ -1,10 +1,6 @@
 spring:
   application:
     name: config-server
-  data:
-    mongodb:
-      uri: ${mongodb.logger.uri:${mongodb.uri:mongodb://localhost:27017}}
-      database: duman
   autoconfigure:
     exclude: org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
 
@@ -14,6 +10,8 @@ server:
     session:
       cookie:
         http-only: true
+  error:
+    include-message: always
 
 logging:
   file:
@@ -30,3 +28,51 @@ management:
     web:
       exposure:
         include: "*"
+
+---
+
+spring:
+  profiles: dev
+  data:
+    mongodb:
+      uri: ${mongodb.logger.uri:${mongodb.uri:mongodb://localhost:27017}}
+      database: duman
+  redis:
+    host: localhost
+    port: 7001
+
+logging:
+  level:
+    root: info
+
+---
+
+spring:
+  profiles: test
+  data:
+    mongodb:
+      uri: ${mongodb.logger.uri:${mongodb.uri:mongodb://mongo:27017}}
+      database: duman
+  redis:
+    host: localhost
+    port: 7001
+
+logging:
+  level:
+    root: info
+
+---
+
+spring:
+  profiles: prod
+  data:
+    mongodb:
+      uri: ${mongodb.logger.uri:${mongodb.uri:mongodb://mongo:27017}}
+      database: duman
+  redis:
+    host: localhost
+    port: 7001
+
+logging:
+  level:
+    root: info
